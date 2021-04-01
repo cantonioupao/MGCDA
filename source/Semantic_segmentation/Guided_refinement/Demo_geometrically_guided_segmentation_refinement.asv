@@ -246,7 +246,7 @@ if plot_more
         color_1, color_2, style_line);
 end
 
-fprintf("Feature matching with NN strategy -> Check  \n");
+fprintf("Feature matching with NN strategy -> Check");
 
 %% Automatic estimation of fundamental matrix for the two views
 
@@ -558,9 +558,6 @@ if save_results
     imwrite(L_warped_1_colors,...
         fullfile(refinement_outputs_dir, warped_prediction_output_filename));
 end
-
-
-fprintf("Wraping of soft predictions from source to target view \n");
 
 %% Confidence-adaptive fusion of target-view prediction with warped source-view prediction
 
